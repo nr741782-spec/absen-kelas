@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absen Anggota Kelas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📋 Absen Anggota Kelas</h1>
+
+        <div class="form-box">
+            <input type="text" id="nama" placeholder="Masukkan nama anggota">
+            <select id="status">
+                <option value="Hadir">Hadir</option>
+                <option value="Izin">Izin</option>
+                <option value="Sakit">Sakit</option>
+                <option value="Alpha">Alpha</option>
+            </select>
+
+            <button onclick="kirimAbsen()">Kirim</button>
+        </div>
+
+        <h2>📄 Data Absensi</h2>
+        <table id="tabelAbsensi">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Status</th>
+                <th>Waktu</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
